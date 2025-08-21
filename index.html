@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lizard Blitz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="gameDescription" style="max-width: 500px; margin: 0 auto 1.5rem auto; font-size: 1.1rem; color: #185a9d; background: #e9f5dbcc; border-radius: 10px; padding: 1rem 1.5rem; border: 2px solid #b6e388;">
+            <b>How to Play:</b><br>
+            Click the lizard button as fast as you can! Each time you click it, the lizard moves to a new random spot. If you don't click the lizard within 1.5 seconds, the game ends. Try to get the highest score and survive as long as possible!
+        </div>
+    <h1 id="mainTitle">lizard Blitz!</h1>
+    <div id="score">Score: 0</div>
+    <div id="highScore">High Score: 0</div>
+    <div id="timer">Time: 10</div>
+
+    <div id="gameArea"></div>
+    <button id="startBtn">Start Game</button>
+    <audio id="clickSound" src="lizard.wav" preload="auto"></audio>
+    <!-- Custom Modal for Game Over -->
+    <div id="gameModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
